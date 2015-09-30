@@ -1,1 +1,1 @@
-application.name = Catalogo de productos
+application.name = "Catalogo de productos"
