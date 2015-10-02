@@ -15,7 +15,8 @@ libraryDependencies ++= Seq(
   "org.webjars"    %    "bootstrap"             % "3.1.1-2",
   "org.webjars"    %    "bootswatch-cerulean"   % "3.3.1+2",
   "org.webjars"    %    "html5shiv"             % "3.7.0",
-  "org.webjars"    %    "respond"               % "1.4.2"
+  "org.webjars"    %    "respond"               % "1.4.2",
+  "net.sf.barcode4j" %  "barcode4j"             % "2.0"
 )
 resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"
 
