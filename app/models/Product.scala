@@ -3,23 +3,23 @@ package models
 /**
  * Created by linhbui on 9/27/15.
  */
-case class Product(ean: Long, name: String, description: String)
+case class Product(ean: String, name: String, description: String)
 
 object Product {
   var products = Set(
-    Product(5010255079763L, "Paperclips Large",
+    Product("5010255079763", "Paperclips Large",
       "Large Plain Pack of 1000"),
-    Product(5018206244666L, "Giant Paperclips",
+    Product("5018206244666", "Giant Paperclips",
       "Giant Plain 51mm 100 pack"),
-    Product(5018306332812L, "Paperclip Giant Plain",
+    Product("5018306332812", "Paperclip Giant Plain",
       "Giant Plain Pack of 10000"),
-    Product(5018306312913L, "No Tear Paper Clip",
+    Product("5018306312913", "No Tear Paper Clip",
       "No Tear Extra Large Pack of 1000"),
-    Product(5018206244611L, "Zebra Paperclips",
+    Product("5018206244611", "Zebra Paperclips",
       "Zebra Length 28mm Assorted 150 Pack")
   )
 
   def findAll = products.toList.sortBy(_.ean)
 
-  def findByEan(ean: Long) = products.find(_.ean == ean)
+  def findByEan(ean: String) = products.find(_.ean == ean)
 }
